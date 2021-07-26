@@ -1,4 +1,9 @@
-ul
-	each result in searchResults
-		li 
-			a(href='/entry/' + result._index) #{result.word} (entry ID#: #{result._index})
+extends layout.pug
+block content
+	if searchResults.length > 0
+		ul
+			each result in searchResults
+				li 
+					a(href='/entry/' + result._index) #{result.word} (entry ID#: #{result._index})
+	else
+		h1 No results found
