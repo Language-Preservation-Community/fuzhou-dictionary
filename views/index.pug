@@ -1,0 +1,10 @@
+form(method='GET', action='/search')
+	select(name='type')
+		option(value='word') Word
+		option(value='foochowRomanized') Foochow Romanized
+		option(value='rongpin') Rong Pinyin
+		option(value='definition') Definition
+		option(value='mandarin') Mandarin Characters
+	input(type='text', name='query', placeholder='query')
+	input(type='submit')
+a(href='/data.json', download='') Download the database

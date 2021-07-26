@@ -1,0 +1,4 @@
+ul
+	each result in searchResults
+		li 
+			a(href='/entry/' + result._index) #{result.word} (entry ID#: #{result._index})

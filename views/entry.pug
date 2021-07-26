@@ -1,0 +1,12 @@
+h1 #{word}
+p ID#: #{_index}
+h2 Pronounciation
+p(style='white-space:pre;')
+	| Foochow Romanized: #{foochowRomanized}
+	| Rong Pinyin: #{rongpin}
+h2 Definition
+ol(type='1')
+	each def in definition
+		li #{def}
+h2 Mandarin equivalents
+p #{mandarin}
