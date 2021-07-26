@@ -1,1 +1,1 @@
-run = "node index.js"
+run = "NODE_ENV=production node index.js"

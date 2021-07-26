@@ -1,0 +1,12 @@
+extends layout.pug
+block scripts
+	script(src='https://hcaptcha.com/1/api.js', async, defer)
+block content
+	form#suggest_form(method='POST', action='')
+		label(for='github_username') Github Username: 
+		input(id='github_username', type='text', name='githubUsername', placeholder='Github Username')
+		label(for='word') Word:  
+		input(id='word', type='text', name='word', placeholder='Word')
+		textarea(form='suggest_form', name='info', placeholder='More info...')
+		div.h-captcha(data-sitekey=hcaptchaSitekey)
+		input(type='submit')

@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@octokit/rest": "^18.7.1",
     "express": "^4.17.1",
+    "hcaptcha": "^0.1.0",
     "pug": "^3.0.2"
   }
 }
