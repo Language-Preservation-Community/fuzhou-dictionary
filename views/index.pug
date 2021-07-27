@@ -11,4 +11,8 @@ block content
 		label(for='search_query') Query:
 		input#search_query(type='text', name='query', placeholder='Query')
 		input(type='submit')
-	a(href='/data.json', download='') Download the database
+	ul(style='list-style-type: none; padding: 0;')
+		li
+			a(href='/suggest') Suggest a word
+		li
+			a(href='/data.json', download) Download the database

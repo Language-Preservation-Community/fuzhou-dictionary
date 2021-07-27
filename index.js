@@ -6,6 +6,8 @@ let raw = fs.readFileSync(config.database);
 search.init(raw);
 let data = search.getData();
 
+fs.writeFileSync('server.pid', process.pid);
+
 const express = require('express');
 const app = express();
 app.set('view engine', 'pug');

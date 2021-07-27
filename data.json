@@ -43457,10 +43457,10 @@
 	{
 		"word": "福",
 		"foochowRomanized": [
-			"Huk4"
+			"huk4"
 		],
 		"rongpin": [
-			"Houk24"
+			"houk24"
 		],
 		"definition": [
 			"blessing",
@@ -77509,5 +77509,20 @@
 		"rongpin": [],
 		"definition": [],
 		"mandarin": []
+	},
+	{
+		"word": "世乇",
+		"foochowRomanized": [
+			"sie3 noh4"
+		],
+		"rongpin": [
+			"sie53 noh24"
+		],
+		"definition": [
+			"what"
+		],
+		"mandarin": [
+			"什麼"
+		]
 	}
 ]

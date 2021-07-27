@@ -1,0 +1,1 @@
+process.kill(Number(require('fs').readFileSync('server.pid')), 'SIGUSR2');
