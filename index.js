@@ -23,7 +23,7 @@ app.get('/data.json', (req, res) => {
 	res.send(raw);
 });
 
-const searchTypes = ['word', 'foochowRomanized', 'rongpin', 'definition', 'mandarin'];
+const searchTypes = ['word', 'foochowRomanized', 'rongpin', 'bayin', 'definition', 'mandarin'];
 app.get('/search', (req, res, next) => {
 	const { type, query } = req.query;
 	if (type === undefined || query === undefined) {
@@ -46,7 +46,7 @@ app.get('/entry/:entry', (req, res, next) => {
 		err.status = 400;
 		return next(err);
 	}
-	const entry = data[entryId];
+	const entry = Object.assign({}, data[entryId]);
 	if (!entry) {
 		const err = new Error('No such entry');
 		err.status = 404;
