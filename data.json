@@ -71,9 +71,15 @@
 			"sang1",
 			"sang3"
 		],
-		"rongpin": [],
-		"definition": [],
-		"mandarin": [],
+		"rongpin": [
+			"sang55"
+		],
+		"definition": [
+			"The number that represents the arabic numeral \"3\"; the third real positive number"
+		],
+		"mandarin": [
+			"三"
+		],
 		"bayin": [
 			"時山 上平",
 			"時山 上去"
