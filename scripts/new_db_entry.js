@@ -7,7 +7,7 @@ const { question, readDb, writeDb } = require('./util');
 	const rongpin = (await question('Rong Pinyin: ')).split(',');
 	const definition = (await question('Definition: ')).split(',');
 	const mandarin = (await question('Mandarin: ')).split(',');
-	const bayin = (await question('Mandarin: ')).split(',');
+	const bayin = (await question('Qi Lin Bayin: ')).split(',');
 	db.push({
 		word,
 		foochowRomanized,
