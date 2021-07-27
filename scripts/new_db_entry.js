@@ -15,4 +15,5 @@ const { question, readDb, writeDb } = require('./util');
 		mandarin
 	});
 	writeDb(databaseFile, db);
+	process.exit(0);
 })();
