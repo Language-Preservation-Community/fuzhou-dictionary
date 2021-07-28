@@ -15,12 +15,16 @@ app.set('views', __dirname + '/views');
 app.use('/static', express.static('static'));
 app.use(express.urlencoded({ extended: false }));
 
+//general static pages
 app.get('/', (req, res) => {
 	res.render('index');
 });
 app.get('/data.json', (req, res) => {
 	res.set('Content-Type', 'application/json');
 	res.send(raw);
+});
+app.get('/help', (req, res) => {
+	res.render('help');
 });
 
 const searchTypes = ['word', 'foochowRomanized', 'rongpin', 'bayin', 'definition', 'mandarin'];
