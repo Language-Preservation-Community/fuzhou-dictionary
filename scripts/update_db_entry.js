@@ -7,7 +7,7 @@ const setProp = (obj, prop, value) => obj[prop] = fallback(value, obj[prop]);
 	const word = await question('Word: ');
 	const foochowRomanized = (await question('Foochow Romanized: ')).split(',');
 	const rongpin = (await question('Rong Pinyin: ')).split(',');
-	const definition = (await question('Definition: ')).split(',');
+	const definition = (await question('Definition: ')).split('|');
 	const mandarin = (await question('Mandarin: ')).split(',');
 	const bayin = (await question('Qi Lin Bayin: ')).split(',');
 	const entry = db.find(item => item.word === word);

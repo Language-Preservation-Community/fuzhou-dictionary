@@ -1,1 +1,17 @@
 extends layout.pug
+block content
+	h1 How do I search?
+	ul
+		li
+			| Word (Fuzhounese Characters): Search by characters. Note that character usage may differ
+		li
+			| Foochow Romanized: search by foochow romanized (I imported the data from elsewhere and I'm not sure how it works, but there's a conversion table in @only3km/CikLinBekIn IIRC)
+		li
+			| Rong Pinyin: search by rong pinyin (yngping.zingzeu.org)
+		li 
+			| Qi Lin Bayin: Search with the Qi Lin Bayin rime book (format is [initial][rime] [tone])
+		li
+			| Definition (English Search): search by the English definition
+		li
+			| Mandarin Characters: search by simplified mandarin characters
+	p Tip: conduct an empty search to see which words have certain fields filled out

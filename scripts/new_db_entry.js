@@ -5,7 +5,7 @@ const { question, readDb, writeDb } = require('./util');
 	const word = await question('Word: ');
 	const foochowRomanized = (await question('Foochow Romanized: ')).split(',');
 	const rongpin = (await question('Rong Pinyin: ')).split(',');
-	const definition = (await question('Definition: ')).split(',');
+	const definition = (await question('Definition: ')).split('|'); //split by | so that commas work
 	const mandarin = (await question('Mandarin: ')).split(',');
 	const bayin = (await question('Qi Lin Bayin: ')).split(',');
 	db.push({
